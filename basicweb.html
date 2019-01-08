@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eliška Siváková</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS File -->
+    <link href="css/basicweb.css" rel="stylesheet" type="text/css">
+    <!-- Link to Google Font Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/assets/small/fav-icon.png">
+    <!-- Social media Icons in Footer -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+<!-- NAVIGATION -->
+<header id="header">
+
+<div class="logo">
+    <!-- Logo with a link to the Home Page -->
+    <a href="home.html"><img  src="images/assets/small/logo.png" alt="logo"></a>
+</div>
+<div class="burgermenu">
+
+        <!-- Burger Menu -->
+        <img src="images/assets/small/burger-menu.png" alt="burger menu icon" onclick="openNav()">
+    </div>
+
+<!-- Overlay -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+     <div class="overlay-content">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+     </div>
+</div>
+
+</header>
+
+<!-- BASIC WEB PAGE -->
+<main class="main-container">
+
+<div class="basicweb">
+    <h1>BASIC<br>WEB</h1>
+
+        <div class="subline"></div>
+
+<div class="Bweb">
+    <p class="bw-text"> Introduction to basic terminology within interface design, digital communication, and responsive web design.
+    <br><br>
+    <b>Skills Gained</b> - HTML, CSS, Basics of Adobe Photoshop, Illustrator, InDesign, XD and buy a domain.
+    <br><br>
+    <b>Duration</b> - 4 weeks.
+    </p>
+
+<!-- V for scroll down -->
+<a href="#projects" class="downbtn">&#8744;</a>
+
+</div>
+</div>
+
+<!-- PROJECTS -->
+<h2 id="projects">RESPONSIVE WEBSITE</h2>
+
+<div class="subline1"></div>
+
+<div class="container">
+
+<picture>
+        <source media="(min-width:790px)" srcset="images/assets/large/responsive-web.png">
+        <source media="(min-width:500px)" srcset="images/assets/medium/responsive-web.png">
+        <source media="(min-width:360px)" srcset="images/assets/small/responsive-web.png">
+        <img src="images/assets/small/responsive-web.png" alt="Responsive Web pic" class="graphic">
+</picture>
+
+<div class="content">
+    <p class="text">This project is a responsive version of my previous project - my first mobile website.
+    <br><br>
+    My given style for this project was Deconstruction. My website consists of small school tasks, such as mood boards, logo, folder structure and explanation of my design choices (colors, typography..). I coded 4 pages. Welcome page, a page about me, a page about my given style and page about my design.
+    <br><br>
+    For coding, I used code editor Brackets. Developer tool Chrome and Cyberduck for upload files on my domain.
+    <br><br>
+    In this assignment, I have learned more about responsivity, CSS-grid, and Media Queries. Use More advanced HTML5 and CSS3 for creating a responsive web design. Including media queries, responsive navigation, advanced selectors.
+    </p>
+
+    <button onclick="btn1()">GO TO WEBSITE</button>
+
+    <button onclick="btn()">PROCESS DOCUMENT</button>
+
+</div>
+</div>
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="footer">
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/eliška-siváková-920843134/" target="_blank" class="linked-in" title="Linked In"><i class="fab fa-linkedin-in fa-1x"></i></a>
+      <a href="https://www.instagram.com/elisivakova/" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram fa-1x"></i></a>
+      <a href="https://www.facebook.com/sivakova.eli" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f fa-1x"></i></a>
+    </div>
+
+    <div class="copyright">
+      <p class="align-left">&copy; 2019 by Eliška Siváková</p>
+    </div>
+</div>
+</footer>
+
+<!-- JAVA SCRIPT -->
+<script src="js/javascript.js"></script>
+
+</body>
+</html>

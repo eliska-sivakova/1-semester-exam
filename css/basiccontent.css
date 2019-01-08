@@ -1,0 +1,260 @@
+body {
+    font-family: "Roboto";
+    color: black;
+    margin: inherit;
+}
+
+.box { box-sizing: border-box;
+}
+
+
+/* Style for OVERLAY */
+#myNav {
+    z-index: 2;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #c4c4c4;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+}
+
+
+/* Header area GRID */
+#header {
+    grid-area: header-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo-area burgermenu-area";
+}
+
+.burgermenu {
+    grid-area: burgermenu-area;
+    position: absolute;
+    width: 30px;
+    height: auto;
+    padding-top: 22px;
+    right: 40px;
+
+}
+
+.logo {
+    grid-area: logo-area;
+    padding-left: 40px;
+    margin: 10px;
+}
+
+/* BASIC CONTENT PAGE */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subline {
+    height: 30px;
+    width: 70px;
+    border-bottom: 0.2em solid #fff;
+    margin: auto;
+}
+
+.Bc {
+    padding: 20px 50px;
+}
+
+p {
+    color: white;
+}
+
+.basiccontent {
+        background-image: url(../images/assets/small/BC-50.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 150px;
+}
+
+
+.downbtn {
+    position: absolute;
+    bottom: 15px;
+    left: 49.99%;
+    right: 49.99%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    z-index: 1;
+
+}
+
+h2 {
+    text-align: center;
+    color: #1700FF;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.subline1 {
+    width: 70px;
+    border-bottom: 0.2em solid #1700FF;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.graphic {
+    width: 100%;
+}
+
+.text {
+    color: #0F0F0F;
+    font-size: 15px;
+    margin: 30px;
+}
+
+button {
+    color: #1700FF;
+    background-color: #fff;
+    border: 2px solid #1700FF;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #1700FF;
+    color: #fff;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #101010;
+}
+
+.copyright {
+    padding-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+.icons {
+    padding-top: 20px;
+    margin: auto;
+    width: 75px;
+}
+
+.facebook {
+    color: #fff;
+    margin: 5px;
+}
+
+.instagram {
+    color: #fff;
+    margin: 5px;
+}
+
+.linked-in {
+    color: #fff;
+    margin: 5px;
+}
+
+/* Media Queries */
+/*** TABLET, DESKTOP ***/
+@media only screen and (min-width:790px) {
+
+.basiccontent {
+        background-image: url(../images/assets/large/BC-50.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 230px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.bc-text {
+          margin: auto;
+          width: 50%;
+          padding: 20px;
+}
+
+.text {
+       width: 80%;
+}
+
+.graphic {
+        margin-left: 20px;
+}
+
+.container {
+    grid-area: main-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "picture-area content-area";
+}
+
+.graphic {
+        grid-area: picture-area;
+}
+#content {
+        grid-area: content-area;
+}
+}
+
+@media only screen and (min-width:500px) {
+ .basiccontent {
+        background-image: url(../images/assets/large/BC-50.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 230px;
+}
+h1 {
+    font-size: 80px;
+}
+}

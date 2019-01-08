@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eliška Siváková</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the css File -->
+    <link href="css/portfolio.css" rel="stylesheet" type="text/css">
+    <!-- Link to Google Font Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/assets/small/fav-icon.png">
+    <!-- Social media Icons in Footer -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+<!-- NAVIGATION -->
+<header id="header">
+
+<div class="logo">
+    <!-- Logo with a link to the Home Page -->
+    <a href="home.html"><img  src="images/assets/small/logo.png" alt="logo"></a>
+</div>
+<div class="burgermenu">
+
+        <!-- Burger Menu -->
+        <img src="images/assets/small/burger-menu.png" alt="burger menu icon" onclick="openNav()">
+    </div>
+
+<!-- Overlay -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+     <div class="overlay-content">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+     </div>
+</div>
+
+</header>
+
+<!-- PORTFOLIO PAGE -->
+<main class="main">
+
+    <h6 onclick="bweb()" id="web">BASIC<br>WEB</h6>
+    <h6 onclick="bcon()" id="content">BASIC<br>CONTENT</h6>
+    <h6 onclick="bani()" id="animation">BASIC<br>ANIMATION</h6>
+    <h6 onclick="bux()" id="ux">BASIC<br>UX</h6>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="footer">
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/eliška-siváková-920843134/" target="_blank" class="linked-in" title="Linked In"><i class="fab fa-linkedin-in fa-1x"></i></a>
+      <a href="https://www.instagram.com/elisivakova/" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram fa-1x"></i></a>
+      <a href="https://www.facebook.com/sivakova.eli" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f fa-1x"></i></a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2019 by Eliška Siváková</p>
+    </div>
+</div>
+</footer>
+
+<!-- JAVA SCRIPT -->
+<script src="js/javascript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: "Roboto";
+    color: black;
+    margin: inherit;
+}
+
+.box { box-sizing: border-box;
+}
+
+#main-container {
+}
+
+
+/* Style for OVERLAY */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #c4c4c4;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+}
+
+
+/* Header area GRID */
+#header {
+    grid-area: header-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo-area burgermenu-area";
+}
+
+.burgermenu {
+    grid-area: burgermenu-area;
+    position: absolute;
+    width: 30px;
+    height: auto;
+    padding-top: 22px;
+    right: 40px;
+
+}
+
+.logo {
+    grid-area: logo-area;
+    padding-left: 40px;
+    margin: 10px;
+}
+
+
+/* Background picture */
+#main-container {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* SVG */
+.wrapper {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 75px;
+    padding-top: 65px;
+}
+
+svg {
+    stroke: #fff;
+    fill: transparent;
+    stroke-dasharray: 8200;
+    stroke-dashoffset: 8200;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: #101010;
+}
+
+.copyright {
+    padding-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+.icons {
+    padding-top: 20px;
+    margin: auto;
+    width: 75px;
+}
+
+.facebook {
+    color: #fff;
+    margin: 5px;
+}
+
+.instagram {
+    color: #fff;
+    margin: 5px;
+}
+
+.linked-in {
+    color: #fff;
+    margin: 5px;
+}
+
+/* Media Queries */
+/*** TABLET, DESKTOP ***/
+
+@media all and (min-width:790px) {
+#main-container {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 26%;
+    margin: auto;
+}
+}

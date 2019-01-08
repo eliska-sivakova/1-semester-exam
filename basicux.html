@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eliška Siváková</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS File -->
+    <link href="css/basicux.css" rel="stylesheet" type="text/css">
+    <!-- Link to Google Font Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/assets/small/fav-icon.png">
+    <!-- Social media Icons in Footer -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+<!-- NAVIGATION -->
+<header id="header">
+
+<div class="logo">
+    <!-- Logo with a link to the Home Page -->
+    <a href="home.html"><img  src="images/assets/small/logo.png" alt="logo"></a>
+</div>
+<div class="burgermenu">
+
+        <!-- Burger Menu -->
+        <img src="images/assets/small/burger-menu.png" alt="burger menu icon" onclick="openNav()">
+    </div>
+
+<!-- Overlay -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+     <div class="overlay-content">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+     </div>
+</div>
+
+</header>
+
+<!-- BASIC UX PAGE -->
+<main class="main-container">
+
+<div class="basicux">
+    <h1>BASIC<br>UX</h1>
+
+        <div class="subline"></div>
+
+<div class="Bux">
+    <p class="bux-text"> Introduction to User Experience. To plan and conduct user research including user testing, interview technique, user flows, user tasks, business goals, understanding of functionalities on websites and in digital solutions.
+    <br><br>
+    <b>Skills Gained</b> - user testing of digital productions, working with data about users, plan and evaluate a digital content production based on a given brief, project management.
+    <br><br>
+    <b>Duration</b> - 4 weeks.
+
+    </p>
+
+<!-- V for scroll down -->
+<a href="#projects" class="downbtn">&#8744;</a>
+
+</div>
+</div>
+
+<!-- PROJECTS -->
+<!-- Design sprite + Web Prototype -->
+<h2 id="projects">DESIGN SPRITE + WEB PROTOTYPE</h2>
+
+<div class="subline1"></div>
+
+<div class="container">
+
+<picture>
+        <source media="(min-width:790px)" srcset="images/assets/large/web-prototype.png">
+        <source media="(min-width:500px)" srcset="images/assets/medium/web-prototype.png">
+        <source media="(min-width:360px)" srcset="images/assets/small/web-prototype.png">
+        <img src="images/assets/small/web-prototype.png" alt="Web Prototype pic" class="graphic">
+</picture>
+
+<div class="content">
+    <p class="text">In the last theme, I analyzed and worked with data about students whos using our school platform Fronter. I have done some user tests and interviews with students from different semesters.
+    <br><br>
+    I created this project in Group 4 with Arnar Logi Hakonarson, Janina-Stefania Olteanu, Konstantinos Anagnostou and Petra Gergely. We decided to add to Fronter new function for upload files, folders, documents and share it with other students. Something similar to Google Drive.
+    <br><br>
+    Each member of our group created one paper prototype, after that each of us created his own web prototype in Adobe XD. Our group chooses my prototype, so we continued with testing. After testing I changed some things in the prototype and create a coded web prototype.
+    </p>
+
+    <button onclick="btn15()">WEB PROTOTYPE</button>
+
+    <button onclick="btn16()">XD PROTOTYPE</button>
+
+</div>
+</div>
+
+
+<!-- Design sprite: Native App -->
+<h2>DESIGN SPRITE: NATIVE APP</h2>
+
+<div class="subline1"></div>
+
+<div class="container">
+
+<picture>
+        <source media="(min-width:790px)" srcset="images/assets/large/kea-app.png">
+        <source media="(min-width:500px)" srcset="images/assets/medium/kea-app.png">
+        <source media="(min-width:360px)" srcset="images/assets/small/kea-app.png">
+        <img src="images/assets/small/kea-app.png" alt="Kea app pic" class="graphic">
+</picture>
+
+<div class="content">
+    <p class="text">The last project of the 1st semester was created to Mobile App for KEA. The requirement was using colors from KEA design guide and UI Kits.
+    <br><br>
+    This project was a group project and my group members were Janina-Stefania Olteanu, Konstantinos Anagnostou, Dasa Jarinova, Andrea Makarova, Mateusz Mieciek and Ioana-Andreea Mihai. We created a mobile app like a portfolio for KEA students. Students can upload there their projects, graphic, videos.. everything they want to share with others. This App can be also useful for employers, they can view all projects, find a contact on student or sent them a direct message.
+    <br><br>
+    In this theme, I have learned more about Mobile Applications, about UI, and about UX testing. The last assignment in this theme was created pdf with whole 4 weeks documentation.
+    </p>
+
+    <button onclick="btn17()">XD PROTOTYPE</button>
+
+    <button onclick="btn18()">THEME DOCUMENTATION</button>
+
+</div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="footer">
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/eliška-siváková-920843134/" target="_blank" class="linked-in" title="Linked In"><i class="fab fa-linkedin-in fa-1x"></i></a>
+      <a href="https://www.instagram.com/elisivakova/" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram fa-1x"></i></a>
+      <a href="https://www.facebook.com/sivakova.eli" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f fa-1x"></i></a>
+    </div>
+
+    <div class="copyright">
+      <p class="align-left">&copy; 2019 by Eliška Siváková</p>
+    </div>
+</div>
+</footer>
+
+<!-- JAVA SCRIPT -->
+<script src="js/javascript.js"></script>
+
+</body>
+</html>
+
